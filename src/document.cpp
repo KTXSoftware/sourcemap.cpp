@@ -308,6 +308,9 @@ namespace SourceMap
 			json_append_element(json_sources, json_source);
 		}
 		json_append_member(json_node, "sources", json_sources);
+		
+		JsonNode* json_source_root = json_import("file://");
+		json_append_member(json_node, "sourceRoot", json_source_root);
 
 		size_t contents_size = contents.size();
 		JsonNode* json_contents = json_mkarray();
