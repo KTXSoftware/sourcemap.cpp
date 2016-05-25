@@ -9,7 +9,7 @@ For details, see http://sourceforge.net/projects/libb64
 extern "C" {
 #endif
 
-#include <b64/cdecode.h>
+#include "b64/cdecode.h"
 
 int base64_decode_value(char value_in)
 {

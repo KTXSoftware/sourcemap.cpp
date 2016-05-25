@@ -9,7 +9,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "json.hpp"
+#include "../deps/json/json.hpp"
 #include "sourcemap.hpp"
 
 #include "map_line.hpp"

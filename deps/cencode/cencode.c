@@ -9,7 +9,7 @@ For details, see http://sourceforge.net/projects/libb64
 extern "C" {
 #endif
 
-#include <b64/cencode.h>
+#include "b64/cencode.h"
 
 const int CHARS_PER_LINE = 72;
 

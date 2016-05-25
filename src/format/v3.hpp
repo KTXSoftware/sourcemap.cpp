@@ -7,8 +7,8 @@
 #include <iostream>
 #include <algorithm>
 
-#include "sourcemap.hpp"
-#include "mappings.hpp"
+#include "../sourcemap.hpp"
+#include "../mappings.hpp"
 
 // add namespace for c++
 namespace SourceMap

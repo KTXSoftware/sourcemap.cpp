@@ -1,5 +1,5 @@
 // include library
-#include <omp.h>
+//#include <omp.h>
 #include <string>
 #include <istream>
 #include <ostream>
@@ -16,7 +16,7 @@
 // our own header
 #include "sourcemap.hpp"
 #include "document.hpp"
-#include "b64/decode.h"
+#include "../deps/cencode/b64/decode.h"
 
 JsonNode* json_import(const char* str) {
 	if (std::string(str) == "null") { return json_mknull(); }
@@ -388,8 +388,8 @@ namespace SourceMap
 
 		size_t i = 0;
 
-		double start = omp_get_wtime();
-		double end = omp_get_wtime();
+		//double start = omp_get_wtime();
+		//double end = omp_get_wtime();
 
 		size_t offset = sources.size();
 
@@ -423,9 +423,9 @@ namespace SourceMap
 			}
 			++i;
 		}
-		end = omp_get_wtime();
+		//end = omp_get_wtime();
 
-		cerr << "Benchmark: " << (end - start) << endl;
+		//cerr << "Benchmark: " << (end - start) << endl;
 
 	}
 

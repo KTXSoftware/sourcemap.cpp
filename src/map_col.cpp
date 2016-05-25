@@ -1,5 +1,5 @@
 // include library
-#include <omp.h>
+//#include <omp.h>
 #include <algorithm>
 #include <stdexcept>
 
